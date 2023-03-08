@@ -10,6 +10,12 @@ router.get('/redirect', async (ctx) => {
   ctx.redirect('https://www.google.com/');
 });
 
+router.get('/', async (ctx) => {
+  ctx.body = "fwfew";
+  console.log("erfere")
+});
+
+
 app.use(router.routes());
 
 app.listen(3000, () => {
