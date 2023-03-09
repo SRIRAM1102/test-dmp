@@ -6,7 +6,7 @@ const router = new Router();
 
 router.get('/fredirect', async (ctx) => {
   ctx.status = 301;
-  redirection_url = `https://play.google.com/store/apps/details?id=air.com.ace2three.mobile&hl=en_US&dw_uuid=3433`
+  redirection_url = `https://play.google.com/store/apps/details?id=in.a23.rummy&hl=en_US&dw_uuid=3433`
   ctx.redirect('https://www.vizibl.ai');
 });
 
