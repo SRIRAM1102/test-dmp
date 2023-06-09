@@ -16,6 +16,12 @@ router.get('/gredirect', async (ctx) => {
   ctx.redirect(redirection_url);
 });
 
+router.get('/tredirect', async (ctx) => {
+  ctx.status = 301;
+  redirection_url = `https://nodetracker-test.datawrkz.com/redirect/?en=redirect&ev=creativehasredirected&tag_id=604`
+  ctx.redirect(redirection_url);
+});
+
 app.use(router.routes());
 
 app.listen(3000, () => {
